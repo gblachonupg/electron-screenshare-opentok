@@ -24,3 +24,5 @@ The main.js just creates the electron window and starts the express server.
 
 As you can see in the app/src/js/app.js, i use the same constraints in both my video element an in OpenTok but in the video element, 
 I get the screen display rather than in OpenTok, i get the user's camera (default one i guess)
+
+As you can see, i use the module rtc-screenshare (https://github.com/rtc-io/rtc-screenshare) to manage screensharing accross browser and electron.
