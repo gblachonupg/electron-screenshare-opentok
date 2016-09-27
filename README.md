@@ -20,7 +20,7 @@ var OT_TOKEN = "";
 
 
 
-The main.js just create the electron window and start the express server.
+The main.js just creates the electron window and start the express server.
 
 As you can see in the app/src/js/app.js, i use the same constraints in both my video elemnt an in opentok but in the video element, 
 i get the screen display rather than in opentok, i have the user camera (default one i guess)
