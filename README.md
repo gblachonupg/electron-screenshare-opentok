@@ -14,6 +14,11 @@ To launch the sample app : electron app in root
 
 You should add your opentok credential in app/src/js/app.js
 
+var OT_API_KEY = "";
+var OT_SESSION_ID = "";
+var OT_TOKEN = "";
+
+
 
 The main.js file juste create the express server
 
