@@ -8,7 +8,7 @@ var OT_SESSION_ID = "";
 var OT_TOKEN = "";
 
 window.addEventListener('load', function () {
-  
+
   const session = OT.initSession(OT_API_KEY, OT_SESSION_ID);
   session.on('streamCreated', function (event) {
     session.subscribe(event.stream, function (err) {
@@ -32,11 +32,11 @@ window.addEventListener('load', function () {
     })
 
     // We try to init a publisher with the screenshare constraints, but the publisher uses the camera
-    var publisher = OT.initPublisher("screenPublisher", constraints, function(err) {
+    var publisher = OT.initPublisher("screenPublisher", {constraints: constraints}, function(err) {
       if (err)
         console.log('OT.initPublisher error: ', err);
       else
         console.log('Publisher Initialized');
-      }); 
+      });
   });
 });
